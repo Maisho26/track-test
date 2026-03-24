@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track</title>
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const num = params.get("num");
+
+            if (num) {
+                window.location.href =
+                    "https://www.econt.com/services/track-shipment?shipment=" + num;
+            } else {
+                document.body.innerHTML = "<h2>Няма номер</h2>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Пренасочване...</h2>
+</body>
+</html>
